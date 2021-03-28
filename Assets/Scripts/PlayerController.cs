@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public bool reSpawn = false;
+    public Transform playerSpawnPoints;
 
     private Transform[] spawnPoints;
     private bool lastToggle = false;
@@ -12,13 +13,13 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnPoints = GameObject.Find("Player Spawn Points").transform.GetComponentsInChildren<Transform>();
+        spawnPoints = playerSpawnPoints.GetComponentsInChildren<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (lastToggle != reSpawn)
+        /*if (lastToggle != reSpawn)
         {
             Respawn();
             reSpawn = false;
@@ -26,7 +27,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             lastToggle = reSpawn;
-        }
+        }*/
     }
 
     private void Respawn()
