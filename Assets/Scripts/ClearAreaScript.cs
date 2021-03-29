@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClearAreaScript : MonoBehaviour
 {
-    public float timeSinceLastTrigger = 0f;
+    private float timeSinceLastTrigger = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -17,9 +17,9 @@ public class ClearAreaScript : MonoBehaviour
     {
         timeSinceLastTrigger += Time.deltaTime;
 
-        if (timeSinceLastTrigger > 1f)
+        if (timeSinceLastTrigger > 1f && Time.realtimeSinceStartup > 10f)
         {
-            Debug.Log("Clear Area");
+            SendMessageUpwards("OnFindClearArea");
         }
     }
 
