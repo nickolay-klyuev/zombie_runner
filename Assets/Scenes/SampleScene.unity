@@ -251,6 +251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3158748350278216944, guid: 56a91a5a9385b193cbe4ce7cf450b5c0, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 892150716, guid: 56a91a5a9385b193cbe4ce7cf450b5c0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 56a91a5a9385b193cbe4ce7cf450b5c0, type: 3}
@@ -721,6 +725,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3b17d2689ea90e78a18722e5e84432d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whatHappened: {fileID: 8300000, guid: 6f49368f721214fcc81fda6a7ccf9343, type: 3}
+  goodLandingArea: {fileID: 8300000, guid: 0f00476efd1774d2587939e6bd1a6bb4, type: 3}
 --- !u!1 &1222501170
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,6 +853,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a054539d8c6b1e3d78b9af6cb5a5ed86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialHeliCall: {fileID: 8300000, guid: d820bfda6b5b74e36a0637de9ed0cd61, type: 3}
+  initialCallReply: {fileID: 8300000, guid: 53f65e57d6bf34c7592571f82475f66f, type: 3}
 --- !u!4 &1222501173
 Transform:
   m_ObjectHideFlags: 0

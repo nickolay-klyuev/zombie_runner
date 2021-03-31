@@ -4,27 +4,18 @@ using UnityEngine;
 
 public class HelicopterController : MonoBehaviour
 {
-    public AudioClip callSound;
-
     private bool called = false;
-    private AudioSource audioSource;
     private Rigidbody thisRigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
         thisRigidbody = GetComponent<Rigidbody>();
     }
 
-    public void Call()
+    void OnDispatchHelicopter()
     {
-        if (!called)
-        {
-            called = true;
-            audioSource.clip = callSound;
-            audioSource.Play();
-            thisRigidbody.velocity = new Vector3(0, 0, 50f);
-        }
+        thisRigidbody.velocity = new Vector3(0, 0, 50f);
+        called = true;
     }
 }
