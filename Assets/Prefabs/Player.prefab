@@ -448,6 +448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reSpawn: 0
   playerSpawnPoints: {fileID: 0}
+  landingAreaPrefab: {fileID: 514989096542247023, guid: 1ca04f2323c5004fe9a8ce6b06d1921b, type: 3}
 --- !u!1 &3158748350278216946
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,8 +597,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20, y: 1, z: 40}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 30, y: 30, z: 40}
+  m_Center: {x: 0, y: 16, z: 0}
 --- !u!114 &261506141
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public bool reSpawn = false;
     public Transform playerSpawnPoints;
+    public GameObject landingAreaPrefab;
 
     private Transform[] spawnPoints;
     //private bool lastToggle = false;
@@ -43,6 +44,6 @@ public class PlayerController : MonoBehaviour
 
     void DropFlare()
     {
-        
+        Instantiate(landingAreaPrefab, transform.position, transform.rotation);
     }
 }
